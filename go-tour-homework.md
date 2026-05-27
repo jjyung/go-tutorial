@@ -14,22 +14,18 @@
 - [x] 知道 Go 沒有指標算術（不像 C）
 - [x] **練習**：寫一個函式 `swap(a, b *int)` 交換兩個數值
 
-```
-
-```
+[pointers](./more_types/pointers/pointers.go)
 
 ---
 
 ## 2. Structs（結構體）
 
-- [ ] 定義 struct、存取欄位
-- [ ] struct literal 的寫法
-- [ ] 知道 struct 是值型別（assign 會複製）
-- [ ] **練習**：定義一個 `Person` struct，寫一個函式印出 `"我叫 OO，今年 XX 歲"`
+- [x] 定義 struct、存取欄位
+- [x] struct literal 的寫法
+- [x] 知道 struct 是值型別（assign 會複製）
+- [x] **練習**：定義一個 `Person` struct，寫一個函式印出 `"我叫 OO，今年 XX 歲"`
 
-```
-
-```
+[structs](./more_types/structs/structs.go)
 
 ---
 
