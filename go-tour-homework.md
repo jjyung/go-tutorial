@@ -31,14 +31,16 @@
 
 ## 3. Methods（方法）
 
-- [ ] 對自訂型別定義 method（不只在 struct）
-- [ ] 值接收者 vs 指標接收者的差別
-- [ ] 知道指標 receiver 可以修改接收者的值
-- [ ] **思考**：什麼時候該用指標 receiver？
+- [x] 對自訂型別定義 method（不只在 struct）
+- [x] 值接收者 vs 指標接收者的差別
+- [x] 知道指標 receiver 可以修改接收者的值
+- [x] **思考**：什麼時候該用指標 receiver？
 
-```
+// 1. 需要修改接收者
+// 2. 避免拷貝大型 struct
+// 3. 保持一致：同型別 method 最好統一用指標 receiver
 
-```
+[methods](./more_types/methods/methods.go)
 
 ---
 

@@ -2,6 +2,32 @@
 
 這是我用來熟悉 Go 語法與專案開發流程的練習 repo。
 
+## 初始化一個 Go Module
+
+建立新專案的第一步就是執行 `go mod init`：
+
+```bash
+# 在專案目錄下初始化 module
+mkdir my-project
+cd my-project
+go mod init example.com/my-project
+```
+
+這會產生一個 `go.mod` 檔案，內容類似：
+
+```
+module example.com/my-project
+
+go 1.26.3
+```
+
+- `module` 後面的名稱就是這個模組的 **module path**，也是其他程式 `import` 時要寫的路徑
+- `go` 版本號會自動抓本地安裝的 Go 版本
+- 之後用 `go get` 或 `go mod tidy` 就會自動在 `go.mod` 裡補上 `require` 與 `go.sum`
+
+> 在 Go 的世界裡，每個目錄（除了 main package）都是一個 module。  
+> `go mod init` 就是為你的程式建立身分證 — module path。
+
 ## 專案結構
 
 ```
